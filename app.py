@@ -139,7 +139,7 @@ def calculate_expected_throughput(status: str, distance_m: float) -> str:
     if status != "CLEAR":
         return "0 Gbps"
     if distance_m <= 1000.0:
-        return "1 Gbps"
+        return "1+1 Gbps"
     if distance_m > 1000.0:
         return "Under Trial"
     return "1 Gbps"
